@@ -1,0 +1,40 @@
+.blocks-container{
+  padding: 10px;
+}
+.blocks{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin: 0;
+  padding: 0;
+  margin-left:-20px;
+  list-style: none;
+  &__item{
+    position: relative;
+    padding: 35px 25px 15px 15px ;
+    background: $lightgrey;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: background, border .5s;
+    border:3px solid transparent;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 30%;
+    cursor: pointer;
+    &-content{
+      position: relative;
+      width: 95%;
+      overflow: hidden;
+    }
+    &_green{
+      background: lightgreen;
+    }
+    &_red{
+      background: lightcoral;
+    }
+    &_selected{
+      border:3px solid $blue;
+    }
+  }
+}
+

@@ -1,0 +1,70 @@
+.header-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.control{
+  position: relative;
+  padding: 10px;
+  width: 30%;
+}
+.form{
+  position: relative;
+  &-addblock{
+    &__row{
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &__label{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+      &-title{
+        position: relative;
+        display: inline-block;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.info{
+  position: relative;
+  padding: 10px;
+  width: 30%;
+  border: 3px double $darkgrey;
+  border-radius: 7px;
+  &__row{
+    position: relative;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__title{
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  &__count{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    &_selected{
+      color: $blue;
+      &_green{
+        color: darkgreen;
+      }
+      &_red{
+        color:red;
+      }
+    }
+  }
+}

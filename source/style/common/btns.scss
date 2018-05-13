@@ -1,0 +1,32 @@
+.btn{
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  &_add,&_del{
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: $blue;
+    color:$white;
+  }
+  &_del{
+    width: 80px;
+    margin-right: 20px;
+  }
+  &_close{
+    position: absolute;
+    display: block;
+    background: url("../img/icons/close.png") center no-repeat;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0;
+    top:5px;
+    right:5px;
+  }
+  &_cancel{
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 7px;
+  }
+}
+

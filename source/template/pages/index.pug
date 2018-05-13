@@ -1,0 +1,48 @@
+extends ../_template
+
+block variables
+    - var title = 'Main'
+block content
+    .wrapper
+        .maincontent
+            header.header
+                .container.header-container
+                    .control
+                        form.form.form-addblock(id="formAddBlock")
+                            .form-addblock__row
+                                label.form-addblock__label
+                                    span.form-addblock__label-title Simple block
+                                    input.form-addblock__radio(type="radio" name="blockType" value="simple")
+                                label.form-addblock__label
+                                    span.form-addblock__label-title Complex block
+                                    input.form-addblock__radio(type="radio" name="blockType" value="complex")
+                            .form-addblock__row
+                                button.btn.btn_add(type="submit" id="addBlock" form="formAddBlock") Add block
+                    .info
+                        .info__row
+                            span.info__title.info__title_total Total count blocks :
+                            span.info__count.info__count_total 0
+                        .info__row
+                            span.info__title.info__title_selected Selected count blocks :
+                            span.info__count.info__count_selected 0
+                        .info__row
+                            span.info__title.info__title_selected_green Selected green count blocks :
+                            span.info__count.info__count_selected_green 0
+                        .info__row
+                            span.info__title.info__title_selected_red Selected red count blocks :
+                            span.info__count.info__count_selected_red 0
+
+            main.main
+                .container.blocks-container
+                    ul.blocks(id="blocks")
+        footer.footer
+        .modal(id="modal")
+            .wrap-form
+                form.form-delblock
+                    .form-delblock__text Delete this block?
+                    .form-delblock__row
+                        button.btn.btn_del(type="button" id="del") Ok
+                        button.btn.btn_cancel(type="button" id="cancelDel") Cancel
+
+
+

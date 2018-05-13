@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!--script(src='/assets/js/foundation.js' defer)-->
+    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="header">
+          <div class="container header-container">
+            <div class="control">
+              <form class="form form-addblock" id="formAddBlock">
+                <div class="form-addblock__row">
+                  <label class="form-addblock__label"><span class="form-addblock__label-title">Simple block</span>
+                    <input class="form-addblock__radio" type="radio" name="blockType" value="simple">
+                  </label>
+                  <label class="form-addblock__label"><span class="form-addblock__label-title">Complex block</span>
+                    <input class="form-addblock__radio" type="radio" name="blockType" value="complex">
+                  </label>
+                </div>
+                <div class="form-addblock__row">
+                  <button class="btn btn_add" type="submit" id="addBlock" form="formAddBlock">Add block</button>
+                </div>
+              </form>
+            </div>
+            <div class="info">
+              <div class="info__row"><span class="info__title info__title_total">Total count blocks :</span><span class="info__count info__count_total">0</span></div>
+              <div class="info__row"><span class="info__title info__title_selected">Selected count blocks :</span><span class="info__count info__count_selected">0</span></div>
+              <div class="info__row"><span class="info__title info__title_selected_green">Selected green count blocks :</span><span class="info__count info__count_selected_green">0</span></div>
+              <div class="info__row"><span class="info__title info__title_selected_red">Selected red count blocks :</span><span class="info__count info__count_selected_red">0</span></div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="container blocks-container">
+            <ul class="blocks" id="blocks"></ul>
+          </div>
+        </main>
+      </div>
+      <footer class="footer"></footer>
+      <div class="modal" id="modal">
+        <div class="wrap-form">
+          <form class="form-delblock">
+            <div class="form-delblock__text">Delete this block?</div>
+            <div class="form-delblock__row">
+              <button class="btn btn_del" type="button" id="del">Ok</button>
+              <button class="btn btn_cancel" type="button" id="cancelDel">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

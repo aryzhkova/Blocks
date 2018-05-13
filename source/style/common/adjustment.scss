@@ -1,0 +1,42 @@
+html,body{
+  height: 100%;
+  font-family: 'Tahoma';
+}
+.wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+.maincontent{
+  position: relative;
+  flex:1 0 auto;
+  padding-bottom: 80px;
+}
+.header{
+  position: relative;
+  background: $lightgrey;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.container{
+  position: relative;
+  width:960px;
+  margin: auto;
+}
+.main{
+  position: relative;
+}
+.section{
+  position: relative;
+}
+.footer{
+  position: relative;
+  flex: 0 0 auto;
+  height: 80px;
+  background: black;
+
+}
+*{
+  box-sizing: border-box;
+}
